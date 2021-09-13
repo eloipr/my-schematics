@@ -15,4 +15,4 @@ jobs:
       - run: git config --global user.name 'Eloi Pardo'
       - run: git config --global user.email 'eloipr94@gmail.com'
       - run: npm version patch -m "[RELEASE] %s"
-      - run: git push
+      - run: git push origin ${{ GITHUB_REF }}
