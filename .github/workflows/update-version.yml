@@ -9,6 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.base_ref == 'main' }}
     steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Checkout PR
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
