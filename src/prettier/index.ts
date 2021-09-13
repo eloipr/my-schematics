@@ -10,6 +10,7 @@ import {
   Tree,
   url,
 } from '@angular-devkit/schematics';
+import { addPackageJsonDependency, NodeDependencyType } from '@schematics/angular/utility/dependencies';
 
 import { installPackages } from '../utils/installPackages';
 import { PrettierSchema } from './prettier-schema';
@@ -25,6 +26,7 @@ export function prettier(_options: PrettierSchema): Rule {
         ..._options,
       }),
     ]);
+    addPackageJsonDependency(tree, { name: 'prettier', type: NodeDependencyType.Dev, version: '2.4.0' });
     return chain([mergeWith(parametrizedTemplates, MergeStrategy.Overwrite), installPackages()]);
   };
 }
