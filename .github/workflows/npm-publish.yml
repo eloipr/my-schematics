@@ -6,12 +6,18 @@ name: Node.js Package
 on:
   push:
     branches:
-    - main
+      - main
 
 jobs:
   update-version:
-    uses: maks-stupak/gh-action-bump-version@v7.1.5
-  
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - run: npm version patch -m "[RELEASE] %s"
+      - run: git push
+
   build:
     needs: update-version
     runs-on: ubuntu-latest
