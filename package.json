@@ -1,6 +1,6 @@
 {
   "name": "@eloipr/my-schematics",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A blank schematics",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
