@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "src",
+    "baseUrl": "tsconfig",
     "lib": ["es2018", "dom"],
     "declaration": true,
     "module": "commonjs",
@@ -11,15 +11,15 @@
     "noImplicitThis": true,
     "noUnusedParameters": true,
     "noUnusedLocals": true,
-    "rootDir": "src/",
+    "outDir": "dist/",
     "skipDefaultLibCheck": true,
     "skipLibCheck": true,
     "sourceMap": true,
     "strictNullChecks": true,
     "target": "es6",
-    "types": ["jasmine", "node"]
+    "types": ["jasmine", "node"],
+    "resolveJsonModule": true
   },
-  "include": ["src/**/*"],
-  "exclude": ["src/*/files/**/*"],
-  "files": ["src/index.ts"]
+  "include": ["src/**/*", "package.json"],
+  "exclude": ["src/*/files/**/*"]
 }
