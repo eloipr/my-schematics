@@ -1,7 +1,8 @@
 name: Update package.json version
 
 on:
-  - pull_request
+  pull_request:
+    types: [opened]
 
 jobs:
   update-version:
