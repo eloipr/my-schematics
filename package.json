@@ -5,6 +5,9 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
+  "ng-add": {
+    "save": "devDependencies"
+  },
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "build:watch": "tsc -p tsconfig.json --watch",
