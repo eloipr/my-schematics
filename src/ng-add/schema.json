@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "$id": "NgAddSchematics",
+  "title": "NgAdd Options Schema",
+  "type": "object",
+  "description": "Creates NgAdd configuration",
+  "properties": {
+    "addPrettier": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether to configure prettier or not.",
+      "x-prompt": "Do you want to add prettier to your project?"
+    }
+  }
+}

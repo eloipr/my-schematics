@@ -1,0 +1,4 @@
+src/prettier/files
+src/prettier/*.js
+src/prettier/*.js.map
+src/prettier/*.d.ts

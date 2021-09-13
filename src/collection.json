@@ -1,0 +1,15 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "prettier": {
+      "description": "A blank schematic.",
+      "factory": "./prettier/index#prettier",
+      "schema": "./prettier/schema.json"
+    },
+    "ng-add": {
+      "factory": "./ng-add/index",
+      "description": "Add schematic",
+      "schema": "./ng-add/schema.json"
+    }
+  }
+}

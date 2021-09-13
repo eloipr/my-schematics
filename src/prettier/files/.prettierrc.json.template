@@ -1,0 +1,7 @@
+
+{
+  "bracketSpacing": true,
+  "printWidth": <%= printWidth %>,
+  "tabWidth": <%= tabWidth %>,
+  "singleQuote": <%= singleQuote %>
+}
