@@ -20,6 +20,6 @@
     "types": ["jasmine", "node"],
     "resolveJsonModule": true
   },
-  "include": ["src/**/*", "package.json"],
+  "include": ["src/**/*", "package.json", "src/collection.json"],
   "exclude": ["src/*/files/**/*"]
 }
