@@ -1,3 +1,7 @@
 
 # Ignores TypeScript files, but keeps definitions.
 !*.d.ts
+.github/
+.vscode/
+.prettierignore
+.prettierrc.json
