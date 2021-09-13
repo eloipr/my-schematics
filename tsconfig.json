@@ -11,15 +11,13 @@
     "noImplicitThis": true,
     "noUnusedParameters": true,
     "noUnusedLocals": true,
-    "outDir": "dist/",
     "skipDefaultLibCheck": true,
     "skipLibCheck": true,
     "sourceMap": true,
     "strictNullChecks": true,
     "target": "es6",
-    "types": ["jasmine", "node"],
-    "resolveJsonModule": true
+    "types": ["jasmine", "node"]
   },
-  "include": ["src/**/*", "package.json", "src/collection.json"],
+  "include": ["src/**/*"],
   "exclude": ["src/*/files/**/*"]
 }
