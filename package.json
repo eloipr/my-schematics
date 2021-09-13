@@ -1,7 +1,10 @@
 {
-  "name": "my-schematics",
+  "name": "@eloipr/my-schematics",
   "version": "0.0.0",
   "description": "A blank schematics",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "build:watch": "tsc -p tsconfig.json --watch",
